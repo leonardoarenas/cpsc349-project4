@@ -7,17 +7,37 @@
     <link href="dist/output.css" rel="stylesheet">
 
     <script defer crossorigin src="https://unpkg.com/pocketbase/dist/pocketbase.umd.js"></script>
-    
+
     <!-- <script type="module" src="app.js"></script> -->
 </head>
 
 <body>
-    <div id="root" class="text-blue-500">Hello, World!</div>
-    <h1>Welcome to ...</h1>
-    <p>Click <a href="login.html" class="text-blue-500">here</a> to log in. <br>
-        or <br>
-        Click <a href="signup.html" class="text-blue-500">here</a> to sign up <br>
-    </p>
+    <header class="text-gray-600 body-font bg-blue-500">
+        <div class="container mx-1 flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="index.html">
+                <img src="logo.jpg" alt="Logo of application" class="object-fill w-16 rounded-full">
+                <span class="ml-3 text-xl">AppName</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="text-center">
+        <h1 class="my-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+            Welcome to ...</h1>
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at
+                ...
+                you can -mention what user can do-</p>
+            
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                If this is your first time, click to Sign Up. Otherwise go ahead and Login.
+            </p>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
+                    href="login.html">Login</a>
+                <a class="mr-5 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
+                    href="signup.html">Sign Up</a>
+            </nav>
+    </div>
 </body>
 
 </html>
