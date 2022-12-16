@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/output.css" rel="stylesheet">
+
+    <script defer crossorigin src="https://unpkg.com/pocketbase/dist/pocketbase.umd.js"></script>
+    
+    <script type="module" src="login.js"></script>
+</head>
+
+<body>
+    <div>
+        <form action="/" method="GET" id="login">
+            <h1>Log In</h1>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p><a href="signup.html">Don't have an Account?</a></p>
+    </div>
+</body>
+
+</html>
